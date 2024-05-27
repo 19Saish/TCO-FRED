@@ -1,0 +1,21 @@
+.firstPage-button {
+  display: flex;
+  background-color: #0065b1;
+  border: var(--border);
+  border-radius: 8px;
+  padding: 5px 30px;
+  min-width: 150px;
+  /* margin: 15px; */
+  height: 48px;
+  margin-left: auto;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstPage-button i {
+  font-size: 30px;
+  /* margin-right: 10px; */
+}

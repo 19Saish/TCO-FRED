@@ -1,0 +1,132 @@
+.page12-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  font-family: "Fira Sans" sans-serif;
+}
+
+.b img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.side-bar {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ffffff;
+}
+
+@media (min-width: 1020px) {
+  .side-bar {
+    display: block;
+  }
+  .head {
+    text-align: center;
+  }
+}
+
+.sidebar-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-width: 268px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  border: none;
+  background: #ffffff;
+}
+.active {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 102, 178, 0.08),
+    rgba(0, 102, 178, 0.08)
+  );
+  /* #ffffff; */
+  color: #0066b2;
+}
+
+.head {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 25px;
+}
+
+.lorem {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.content-wrapper {
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  background-color: #f8f4f4;
+  grid-template-areas:
+    "a b"
+    "c d";
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d";
+  }
+}
+
+.b1 {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.b2 {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.b3 {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.b4 {
+  grid-area: d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.b {
+  min-height: 200px;
+  background-color: #fff;
+}
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0066b2;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+}

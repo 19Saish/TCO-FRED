@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  /* background-color: red; */
+  /* background: url("../src/assets/img/bg-image.png"); */
+
+  background-size: cover;
+  background-position: top;
+  background: cover;
+  overflow-x: hidden;
+}

@@ -1,0 +1,35 @@
+.sidebar-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 12px 16px;
+  gap: 16px;
+  min-width: 268px;
+  height: 44px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  border: none;
+  align-items: center;
+  background: #ffffff;
+}
+.active {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 102, 178, 0.08),
+      rgba(0, 102, 178, 0.08)
+    ),
+    #ffffff;
+  color: #0066b2;
+}
+
+@media (max-width: 768px) {
+  .sidebar-btn{
+    min-width: 168px;
+    text-align: left;
+  }
+}
+

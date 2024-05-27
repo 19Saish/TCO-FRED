@@ -1,0 +1,148 @@
+.home-container {
+  padding: 10px;
+  padding-top: 30px;
+  color: #fff;
+  --bg: #0065b1ad;
+  --radius: 8px;
+  --border: 1px solid rgba(255, 255, 255, 0.25);
+  max-width: 100%;
+  background: url("../../src/assets/img/bg-image.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.title-block {
+  margin-bottom: 50px;
+}
+
+.title-block h1 {
+  margin-bottom: 10px;
+}
+
+.project-block h4 {
+  margin-bottom: 20px;
+}
+
+.project-table {
+  background-color: var(--bg);
+  padding: 10px;
+  font-weight: bold;
+  border-spacing: 20px;
+  font-size: 13px;
+  border-collapse: unset;
+  border-radius: var(--radius);
+  max-height: 600px;
+  display: inline-block;
+  overflow: auto;
+}
+/* .project-table::-webkit-scrollbar{
+  display: none;
+} */
+
+.project-table thead td {
+  position: relative;
+  overflow: visible !important;
+}
+
+.project-table thead td:not(:last-child)::after {
+  content: " ";
+  position: absolute;
+  border-right: 2px solid white;
+  height: 100%;
+  right: -10px;
+}
+
+.project-table tr td {
+  white-space: nowrap;
+}
+
+.project-table tr td:nth-child(2) {
+  max-width: 300px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
+
+.project-status.active {
+  color: #1dbe1d;
+  background: none;
+}
+
+.project-status.execution {
+  color: lawngreen;
+}
+
+.project-status.on-hold {
+  color: yellow;
+}
+
+.project-status.closed {
+  color: skyblue;
+}
+
+.project-status.cancelled {
+  color: #ff0000;
+}
+
+.portfolio-col > h4 {
+  margin-bottom: 20px;
+}
+
+.tile {
+  background-color: var(--bg);
+  border-radius: var(--radius);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tile-title {
+  font-size: 14px;
+}
+
+.tile-digits {
+  font-size: 22px;
+}
+
+.chart-tile {
+  height: 220px;
+  padding-bottom: 50px;
+}
+
+.chart-tile.work-chart {
+  padding-bottom: 80px;
+}
+
+.chart-tile.work-chart .title-subtile {
+  margin-bottom: 30px;
+}
+
+.btn-block {
+  margin-top: 300px;
+}
+
+.project-button {
+  display: flex;
+  background-color: #0065b1;
+  border: var(--border);
+  border-radius: 8px;
+  padding: 5px 15px;
+  min-width: 250px;
+  margin: 15px;
+  max-width: 220px;
+  margin-left: auto;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-button i {
+  font-size: 30px;
+  margin-left: 10px;
+}

@@ -1,0 +1,74 @@
+.milestone-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    font-family: "Fira Sans" sans-serif;
+  }
+  
+  .left-Sidebar {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    align-items: flex-start;
+    background-color: #ffffff;
+    transform: all 2s;
+  }
+  @media (min-width: 1020px) {
+    .left-Sidebar {
+      display: block;
+    }
+  }
+  
+  .sidebar-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width: 268px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    border: none;
+    align-items: center;
+    background: #ffffff;
+  }
+  .active {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 102, 178, 0.08),
+      rgba(0, 102, 178, 0.08)
+    );
+    /* #ffffff; */
+    color: #0066b2;
+  }
+
+  .heading {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+    margin: 0;
+    /* line-height: 25px; */
+  }
+
+  /* .main {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "a"
+    "b"
+    ;
+    grid-template-rows: 150px 1fr;
+  } */
+.main {
+  flex: 1;
+}
+
+  .a {
+    grid-area: a;
+  }
+
+  .b {
+    grid-area: b;
+  }
